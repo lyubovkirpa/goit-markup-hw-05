@@ -100,7 +100,7 @@ header {
 
 .link.current {
   color: var(--bgd-color);
-}
+ }
 
 /* подчеркивание */
 .site-nav.link {
@@ -125,25 +125,15 @@ header {
 }
 
 
-.site-nav.link:focus::after {
+.link.current::after {
   content: '';
-  position: absolute;
+  display: block;
   width: 100%;
   height: 2px;
-  display: block;
   border-radius: 2px;
   background-color: var(--bgd-color);
-  margin-top: 32px;
-  opacity: 1;
+  opacity: 1;  
 }
-
-
-.link.current:focus {
-  opacity: 1;
-}
-
-
-
 
 .header-contact {
   display: flex;
